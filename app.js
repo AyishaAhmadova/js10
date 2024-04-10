@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-      neticediv.append(paper);
+      neticediv.append(money);
     });
   });
 });
