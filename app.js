@@ -53,7 +53,4 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-      neticediv.append(money);
-    });
-  });
-});
+
