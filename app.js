@@ -35,20 +35,24 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     Object.entries(netice).forEach(([pul, miqdar]) => {
-      let paper = document.createElement("div");
+      let money = document.createElement("div");
       let img = document.createElement("img");
 
       img.src = imgPaths[pul];
       img.alt = `${pul} AZN`;
-
       for (i = 0; i < miqdar; i++) {
-        paper.append(img.cloneNode(true));
+        money.append(img.cloneNode(true));
       }
 
       let text = document.createElement("p");
       text.textContent = `${pul} AZN: ${miqdar} eded`;
 
-      paper.append(text);
+      money.append(text);
+      neticediv.append(money);
+    });
+  });
+});
+
       neticediv.append(paper);
     });
   });
